@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Forms</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f//mdoyvgye"
+            method="post">
+            <fieldset id="fs-frm-inputs">
+                <div>
+                    <label for="full-name">Full Name:</label>
+                </div>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+
+                <div>
+                    <label for="email-address">Email Address:</label>
+                </div>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+
+                <div><label for="message">Message:</label></div>
+                <textarea rows="5" name="message" id="message" placeholder="How can I help you?" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+
+</html>
